@@ -4,15 +4,15 @@ const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL
 });
 
-export const getEstudantes = async () => {
+export const getAlunos = async () => {
   const res = await api.get('/alunos');
   return res.data;
 };
 
-export const postEstudante = async (estudante) => {
-  await api.post('/alunos', estudante);
+export const postAluno = async (aluno) => {
+  await api.post('/alunos', aluno);
 };
 
-export const deleteEstudante = async (id) => {
+export const deleteAluno = async (id) => {
   await api.delete(`/alunos/${id}`);
 };
