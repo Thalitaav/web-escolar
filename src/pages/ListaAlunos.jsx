@@ -1,0 +1,1 @@
+function ListaEstudantes() { return <div>Lista de estudantes</div>; } export default ListaEstudantes;
